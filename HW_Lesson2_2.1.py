@@ -1,1 +1,5 @@
-print((367*367 + 127*127) ** 0.5)
+print('Please, enter the length of the first leg: ')
+a = int(input())
+print('Please, enter the length of the second leg: ')
+b = int(input())
+print('Your answer is: ' + str(int((a*a + b*b) ** 0.5)))
