@@ -1,6 +1,8 @@
 # 1
 # s = str(input())
-# print(s[2], s[-2], s[:6], s[:-3], s[::2], s[1::2], s[-1::-1], s[-1::-2], s[1:-1], len(s))
+# s = '123456789'
+# print(s[2], s[-2], s[:4], s[:-2], s[::2], s[1::2], s[-1::-1], s[-1::-2], s[-2::-2], s[-2:0:-1], len(s), sep='\n')
+
 
 # 2
 # s = str(input())
@@ -26,11 +28,7 @@
 # b = int(input('Input b: '))
 # c = int(input('Input c: '))
 
-# if a + b <= c:
-#    print('NO')
-# elif a + c <= b:
-#    print('NO')
-# elif b + c <= a:
+# if a + b <= c or a + c <= b or b + c <= a:
 #    print('NO')
 # else:
 #    print('YES')
@@ -40,20 +38,15 @@
 # b = int(input('Input b: '))
 # c = int(input('Input c: '))
 #
-# if a < b < c:
-#     a, b, c = a, b, c
-# elif a < c < b:
-#     a, b, c = a, b, c
-# elif b < a < c:
-#     a, b, c = b, a, c
-# elif b < c < a:
-#     a, b, c = b, c, a
-# elif c < a < b:
-#     a, b, c = c, a, b
-# elif c < b < a:
-#     a, b, c = c, b, a
+# if a > b:
+#     a, b = b, a
+# if b > c:
+#     b, c = c, b
+# if a > b:
+#     a, b = b, a
 #
-# print(f'a = {a}, b = {b}, c = {c}')
+#
+# print(a, b, c)
 
 # 6
 # a = int(input('Input a: '))
@@ -75,7 +68,7 @@
 
 # 7.2
 # a = 20
-# while 1 <= a <= 20:
+# while 1 <= a:
 #    print(a, end=' ')
 #    a -= 1
 
