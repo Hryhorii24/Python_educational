@@ -4,7 +4,11 @@
 
 # 2
 # s = str(input())
-# print(s[len(s)//2 + 1:] + s[: len(s)//2 + 1])
+#
+# if len(s) % 2 == 0:
+#     print(s[len(s) // 2:] + s[: len(s) // 2])
+# else:
+#     print(s[len(s) // 2 + 1:] + s[: len(s) // 2 + 1])
 
 # 3
 # a = int(input())
@@ -89,13 +93,32 @@
 #     a = a // 2
 
 # 8
-# s = ['dfdsfs', 'dfsdf', 'sdfd', 'sdfsdfs', 'hgjgjgjgjgjg']
-#
-# while len(s) >= 0:
-#     if len(s) == 0:
+# s1 = ['dfdsfs', 'dfsdf', 'sdfd', 'sdfsdfs', 'hgjgjgjgjgjg']
+
+# while len(s1) > 0:
+#     s1.pop(0)
+#     print(s1)
+#     if len(s1) == 0:
 #         break
-#     s.pop(0)
-#     print(s)
+#
+# s2 = '32432c4rwerewr'
+#
+# while len(s2) > 0:
+#     s2 = s2.replace(s2[0], "", 1)
+#     print(s2)
+#     if len(s2) == 0:
+#         break
+
+# s3 = [123, 444, 3334, 5, 343]
+# s3.sort()
+#
+# while len(s3) > 0:
+#     s3.pop(0)
+#     print(s3)
+#     if len(s3) == 0:
+#         break
+
+
 
 # 9.1
 # def is_year_leap(a):
@@ -126,10 +149,25 @@
 # is_triangle(11, 14, 5)
 
 # 10
-s = '''Praesent ullamcorper auctor, tortor at ultricies.
-Suspendisse molestie dignissim tempor.
-Praesent ullamcorper auctor, tortor at ultricies.
-Suspendisse molestie dignissim tempor'''
+# t = '''Two roads diverged in a yellow wood,
+# And sorry I could not travel both
+# And be one traveler, long I stood.'''
+#
+# print(len(t.split()))
+#
+# mark = ','
+#
+# for char in t:
+#     if mark in char:
+#         edited = t.replace(char, "")
+#
+#
+# print(edited)
+#
+# text2 = edited.split()
+# text2.sort()
+#
+# print(text2)
 
-print(len(s.split(' ')) + len(s.split('/n')))
+
 
