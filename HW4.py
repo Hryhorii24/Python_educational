@@ -26,7 +26,7 @@ def is_a_number():
             return suspected
 
 
-# print(is_a_number())
+print(is_a_number())
 
 
 
@@ -115,6 +115,9 @@ def song(a=3, b=3, c=0):
         f = '.'
     elif c == 1:
         f = '!'
+    else:
+        a = 0
+        print('incorrect parameter c')
     while a > 1:
         a -= 1
         e = 'la-'*b
@@ -124,4 +127,27 @@ def song(a=3, b=3, c=0):
     return d
 
 
-print(song())
+print(song(a=55, b=33, c=2))
+
+
+
+# 4
+# Саме складне завдання для мене, на даний момент. Красиво зробити не виходить. Схоже, що не вистачає знань
+
+def premax(*numbers):
+    l = list(numbers)
+    l.sort()
+    for i in l:
+        if l[0] != l[1]:
+            break
+        elif l[0] in l:
+            l.pop(0)
+    return l[1]
+
+
+
+print(premax(123, 123, 1, 1, 567, 123, 567, 333))
+
+
+
+
